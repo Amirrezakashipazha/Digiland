@@ -517,7 +517,192 @@ $(document).ready(function () {
 
 });
 
+
+
+/*slider-big auto move*/
+var slider_bid_auto1 = setInterval(function () {
+    document.querySelector('.slider-big').scrollBy({
+        left: -900,
+        behavior: 'smooth'
+    });
+}, 4000);
+var slider_bid_auto2 = setInterval(function () {
+    setInterval(function () {
+        document.querySelector('.slider-big').scrollBy({
+            left: 900,
+            behavior: 'smooth'
+        });
+    }, 4000);
+}, 20000);
+/*slider-big auto move*/
+
+
+/*slider-apple auto move*/
+var slider_apple_auto1 = setInterval(function () {
+    document.querySelector('.apple-body-mahsolat').scrollBy({
+        left: -904,
+        behavior: 'smooth'
+    });
+}, 4000);
+var slider_apple_auto2 = setInterval(function () {
+    setInterval(function () {
+        document.querySelector('.apple-body-mahsolat').scrollBy({
+            left: 905,
+            behavior: 'smooth'
+        });
+    }, 4000);
+}, 24000);
+/*slider-apple auto move*/
+
+
+/*slider-sumsung auto move*/
+var slider_sumsung_auto1 = setInterval(function () {
+    document.querySelector('.sumsung-body-mahsolat').scrollBy({
+        left: -904,
+        behavior: 'smooth'
+    });
+}, 4000);
+var slider_sumsung_auto2 = setInterval(function () {
+    setInterval(function () {
+        document.querySelector('.sumsung-body-mahsolat').scrollBy({
+            left: 905,
+            behavior: 'smooth'
+        });
+    }, 4000);
+}, 16000);
+/*slider-sumsung auto move*/
+
+
+/*slider-xiaomi auto move*/
+var slider_xiaomi_auto1 = setInterval(function () {
+    document.querySelector('.xiaomi-body-mahsolat').scrollBy({
+        left: -904,
+        behavior: 'smooth'
+    });
+}, 4000);
+var slider_xiaomi_auto2 = setInterval(function () {
+    setInterval(function () {
+        document.querySelector('.xiaomi-body-mahsolat').scrollBy({
+            left: 905,
+            behavior: 'smooth'
+        });
+    }, 4000);
+}, 12000);
+/*slider-xiaomi auto move*/
+
+
+/*slider-sayer auto move*/
+var slider_sayer_auto1 = setInterval(function () {
+    document.querySelector('.sayer-body-mahsolat').scrollBy({
+        left: -904,
+        behavior: 'smooth'
+    });
+}, 4000);
+var slider_sayer_auto2 = setInterval(function () {
+    setInterval(function () {
+        document.querySelector('.sayer-body-mahsolat').scrollBy({
+            left: 905,
+            behavior: 'smooth'
+        });
+    }, 4000);
+}, 8000);
+/*slider-sayer auto move*/
+
+
+/*slider-hanz auto move*/
+var slider_hanz_auto1 = setInterval(function () {
+    document.querySelector('.hanz-body-mahsolat').scrollBy({
+        left: -904,
+        behavior: 'smooth'
+    });
+}, 4000);
+var slider_hanz_auto2 = setInterval(function () {
+    setInterval(function () {
+        document.querySelector('.hanz-body-mahsolat').scrollBy({
+            left: 905,
+            behavior: 'smooth'
+        });
+    }, 4000);
+}, 12000);
+/*slider-hanz auto move*/
+
+
+/*slider-console auto move*/
+var slider_console_auto1 = setInterval(function () {
+    document.querySelector('.console-body-mahsolat').scrollBy({
+        left: -904,
+        behavior: 'smooth'
+    });
+}, 4000);
+var slider_console_auto2 = setInterval(function () {
+    setInterval(function () {
+        document.querySelector('.console-body-mahsolat').scrollBy({
+            left: 905,
+            behavior: 'smooth'
+        });
+    }, 4000);
+}, 8000);
+/*slider-console auto move*/
+
+
+/*slider-spiker auto move*/
+var slider_spiker_auto1 = setInterval(function () {
+    document.querySelector('.spiker-body-mahsolat').scrollBy({
+        left: -904,
+        behavior: 'smooth'
+    });
+}, 4000);
+var slider_spiker_auto2 = setInterval(function () {
+    setInterval(function () {
+        document.querySelector('.spiker-body-mahsolat').scrollBy({
+            left: 905,
+            behavior: 'smooth'
+        });
+    }, 4000);
+}, 12000);
+/*slider-spiker auto move*/
+
+
+/*slider-saat auto move*/
+var slider_saat_auto1 = setInterval(function () {
+    document.querySelector('.saat-body-mahsolat').scrollBy({
+        left: -904,
+        behavior: 'smooth'
+    });
+}, 4000);
+var slider_saat_auto2 = setInterval(function () {
+    setInterval(function () {
+        document.querySelector('.saat-body-mahsolat').scrollBy({
+            left: 905,
+            behavior: 'smooth'
+        });
+    }, 4000);
+}, 8000);
+/*slider-saat auto move*/
+
+
+/*slider-laptop auto move*/
+var slider_laptop_auto1 = setInterval(function () {
+    document.querySelector('.laptop-body-mahsolat').scrollBy({
+        left: -904,
+        behavior: 'smooth'
+    });
+}, 4000);
+var slider_laptop_auto2 = setInterval(function () {
+    setInterval(function () {
+        document.querySelector('.laptop-body-mahsolat').scrollBy({
+            left: 905,
+            behavior: 'smooth'
+        });
+    }, 4000);
+}, 8000);
+/*slider-laptop auto move*/
+
+
+
 function scroll_to_left() {
+    clearInterval(slider_bid_auto1);
+    clearInterval(slider_bid_auto2);
 
     document.querySelector('.slider-big').scrollBy({
         left: -900,
@@ -527,6 +712,8 @@ function scroll_to_left() {
 }
 
 function scroll_to_right() {
+    clearInterval(slider_bid_auto1);
+    clearInterval(slider_bid_auto2);
 
     document.querySelector('.slider-big').scrollBy({
         left: 900,
@@ -536,6 +723,9 @@ function scroll_to_right() {
 }
 
 function goright1() {
+    clearInterval(slider_apple_auto1);
+    clearInterval(slider_apple_auto2);
+
     document.querySelector('.apple-body-mahsolat').scrollBy({
         left: 904,
         behavior: 'smooth'
@@ -543,6 +733,9 @@ function goright1() {
 }
 
 function goleft1() {
+    clearInterval(slider_apple_auto1);
+    clearInterval(slider_apple_auto2);
+
     document.querySelector('.apple-body-mahsolat').scrollBy({
         left: -904,
         behavior: 'smooth'
@@ -550,6 +743,8 @@ function goleft1() {
 }
 
 function goright2() {
+    clearInterval(slider_sumsung_auto1);
+    clearInterval(slider_sumsung_auto2);
     document.querySelector('.sumsung-body-mahsolat').scrollBy({
         left: 904,
         behavior: 'smooth'
@@ -557,6 +752,8 @@ function goright2() {
 }
 
 function goleft2() {
+    clearInterval(slider_sumsung_auto1);
+    clearInterval(slider_sumsung_auto2);
     document.querySelector('.sumsung-body-mahsolat').scrollBy({
         left: -904,
         behavior: 'smooth'
@@ -564,6 +761,8 @@ function goleft2() {
 }
 
 function goright3() {
+    clearInterval(slider_xiaomi_auto1);
+    clearInterval(slider_xiaomi_auto2);
     document.querySelector('.xiaomi-body-mahsolat').scrollBy({
         left: 904,
         behavior: 'smooth'
@@ -571,6 +770,8 @@ function goright3() {
 }
 
 function goleft3() {
+    clearInterval(slider_xiaomi_auto1);
+    clearInterval(slider_xiaomi_auto2);
     document.querySelector('.xiaomi-body-mahsolat').scrollBy({
         left: -904,
         behavior: 'smooth'
@@ -578,6 +779,8 @@ function goleft3() {
 }
 
 function goright4() {
+    clearInterval(slider_sayer_auto1);
+    clearInterval(slider_sayer_auto2);
     document.querySelector('.sayer-body-mahsolat').scrollBy({
         left: 904,
         behavior: 'smooth'
@@ -585,6 +788,8 @@ function goright4() {
 }
 
 function goleft4() {
+    clearInterval(slider_sayer_auto1);
+    clearInterval(slider_sayer_auto2);
     document.querySelector('.sayer-body-mahsolat').scrollBy({
         left: -904,
         behavior: 'smooth'
@@ -592,6 +797,9 @@ function goleft4() {
 }
 
 function goright5() {
+    clearInterval(slider_hanz_auto1);
+    clearInterval(slider_hanz_auto2);
+
     document.querySelector('.hanz-body-mahsolat').scrollBy({
         left: 904,
         behavior: 'smooth'
@@ -599,6 +807,8 @@ function goright5() {
 }
 
 function goleft5() {
+    clearInterval(slider_hanz_auto1);
+    clearInterval(slider_hanz_auto2);
     document.querySelector('.hanz-body-mahsolat').scrollBy({
         left: -904,
         behavior: 'smooth'
@@ -606,6 +816,8 @@ function goleft5() {
 }
 
 function goright6() {
+    clearInterval(slider_console_auto1);
+    clearInterval(slider_console_auto2);
     document.querySelector('.console-body-mahsolat').scrollBy({
         left: 904,
         behavior: 'smooth'
@@ -613,6 +825,8 @@ function goright6() {
 }
 
 function goleft6() {
+    clearInterval(slider_console_auto1);
+    clearInterval(slider_console_auto2);
     document.querySelector('.console-body-mahsolat').scrollBy({
         left: -904,
         behavior: 'smooth'
@@ -620,6 +834,9 @@ function goleft6() {
 }
 
 function goright7() {
+    clearInterval(slider_spiker_auto1);
+    clearInterval(slider_spiker_auto2);
+
     document.querySelector('.spiker-body-mahsolat').scrollBy({
         left: 904,
         behavior: 'smooth'
@@ -627,6 +844,8 @@ function goright7() {
 }
 
 function goleft7() {
+    clearInterval(slider_spiker_auto1);
+    clearInterval(slider_spiker_auto2);
     document.querySelector('.spiker-body-mahsolat').scrollBy({
         left: -904,
         behavior: 'smooth'
@@ -634,6 +853,8 @@ function goleft7() {
 }
 
 function goright8() {
+    clearInterval(slider_saat_auto1);
+    clearInterval(slider_saat_auto2);
     document.querySelector('.saat-body-mahsolat').scrollBy({
         left: 904,
         behavior: 'smooth'
@@ -641,6 +862,8 @@ function goright8() {
 }
 
 function goleft8() {
+    clearInterval(slider_saat_auto1);
+    clearInterval(slider_saat_auto2);
     document.querySelector('.saat-body-mahsolat').scrollBy({
         left: -904,
         behavior: 'smooth'
@@ -648,6 +871,9 @@ function goleft8() {
 }
 
 function goright9() {
+    clearInterval(slider_laptop_auto1);
+    clearInterval(slider_laptop_auto1);
+
     document.querySelector('.laptop-body-mahsolat').scrollBy({
         left: 904,
         behavior: 'smooth'
@@ -655,6 +881,9 @@ function goright9() {
 }
 
 function goleft9() {
+    clearInterval(slider_laptop_auto1);
+    clearInterval(slider_laptop_auto1);
+
     document.querySelector('.laptop-body-mahsolat').scrollBy({
         left: -904,
         behavior: 'smooth'
