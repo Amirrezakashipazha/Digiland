@@ -88,7 +88,7 @@ button {
   left: 60px;
   width: 62px;
   height: 62px;
-  z-index: 10000000000;
+  z-index: 999999999;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2), 0 1px 10px rgba(0, 0, 0, 0.15);
   border-radius: 50%;
   cursor: pointer;
@@ -841,7 +841,7 @@ header .sabad-kharid .hover-sabad-kharid p {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100000000000;
+  z-index: 1000000000;
   background-color: #fff;
   padding: 6px 0 4px 0;
   box-shadow: -5px 10px 30px -5px rgba(0, 0, 0, 0.3);
