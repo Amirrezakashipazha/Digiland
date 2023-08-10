@@ -198,7 +198,7 @@ header {
           position: absolute;
           top: 50px;
           right: 0;
-          z-index: 10000000;
+          z-index: 1000000000000;
           height: 400px;
           overflow-y: scroll;
           background-color: var(--bg_header);
@@ -869,7 +869,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000000000;
+  z-index: 100000000000;
   background-color: #fff;
   padding: 6px 0 4px 0;
   box-shadow: -5px 10px 30px -5px rgb(0 0 0 / 30%);
@@ -1487,7 +1487,7 @@ main {
         @include flex(row, space-between, center);
         background-color: #f1f1f1;
         position: relative;
-        z-index: 1000000000;
+        z-index: 999999999;
         padding: 9px 20px 9px 3px;
         h3 {
           font-size: 16px;
@@ -2315,7 +2315,7 @@ footer {
   margin-bottom: 20px;
   transition: bottom 0.2s ease-in-out;
   border-radius: 5px;
-  z-index: 1000000000;
+  z-index: 10000000000;
   width: 100%;
   height: 100%;
   background-color: #fff;
